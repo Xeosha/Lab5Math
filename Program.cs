@@ -6,6 +6,11 @@ namespace Lab5Math
 {
     public class Program
     {
+        /// <summary>
+        /// Для чтения матрицы смежности
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <returns></returns>
         static int[,] ReadMatrixFromFile(string filename)
         {
             int[,] matrix = new int[10, 10];
@@ -38,6 +43,12 @@ namespace Lab5Math
             }
             Console.ReadKey(true);
         }
+
+        /// <summary>
+        /// создает в папке png графов
+        /// </summary>
+        /// <param name="adjacencyMatrix"></param>
+        /// <param name="name"></param>
         static void fun(int[,] adjacencyMatrix, string name)
         {
 
