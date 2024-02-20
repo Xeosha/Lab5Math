@@ -75,16 +75,7 @@ namespace Lab5Math
             {
                 for (int j = 0; j < matrixSize; j++)
                 {
-                    reachabilityMatrix[i, j] = matrix[i, j];
-
-                    //// у другого чувака
-                    //if (i == j)    
-                    //    matrixOfReachability[i, j] = 1;
-                    //else if (matrix[i, j] == 0)  
-                    //    matrixOfReachability[i, j] = 0;  
-                    //else
-                    //    matrixOfReachability[i, j] = 1;
-                    
+                    reachabilityMatrix[i, j] = i == j ? 1 : matrix[i, j];         
                 }
             }
 
