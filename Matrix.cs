@@ -10,18 +10,19 @@ namespace Lab5Math
     {
         private int matrixSize;
         public int[,] matrix;   // матрица смежности
-
-        public Matrix()
+        
+        public Matrix(int size)
         {
-            matrixSize = 10;
+            matrixSize = size;
             matrix = new int[matrixSize, matrixSize];
         }
 
-        public Matrix(int[,] matrix)
+        public Matrix(int[,] matrix) : this(matrix.GetLength(0))
         {
-            this.matrixSize = matrix.GetLength(0);
             this.matrix = matrix;
         }
+
+     
 
         /// <summary>
         /// Количество компонентов связности
